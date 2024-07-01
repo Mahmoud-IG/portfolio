@@ -2,6 +2,8 @@ import React from 'react';
 import LayoutWithImage from './LayoutWithImage';
 import Signature from './Signature';
 import Section from './Section';
+import ScrollArrow from './ScrollArrow';
+import summaryImg from '../../imgs/summary.jpg';
 import {
   FaArrowAltCircleUp,
   FaRegComment,
@@ -11,13 +13,7 @@ import {
   FaRegSadTear,
   FaRegStar,
 } from 'react-icons/fa';
-import ScrollArrow from './ScrollArrow';
 
-// Example photo URL (you can replace this with your own photo URL)
-const photoUrl =
-  'https://as2.ftcdn.net/v2/jpg/08/44/14/29/1000_F_844142963_7e1OqB0RMAgnfJAxp8fUsgiJwEpBQmh1.jpg';
-
-// Example text for each section
 const sections = [
   {
     id: 'feel-section',
@@ -80,7 +76,7 @@ const sections = [
 const Summary = () => {
   return (
     <div>
-      <LayoutWithImage photoUrls={[photoUrl]} text={sections[0].text} signature={<Signature />} />
+      <LayoutWithImage photoUrls={[summaryImg]} text={sections[0].text} signature={<Signature />} />
       <ScrollArrow targetId="feel-section" />
       {sections.map((section, index) => (
         <Section

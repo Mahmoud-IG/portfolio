@@ -1,10 +1,7 @@
 import React from 'react';
 import LayoutWithImage from './LayoutWithImage';
 import Signature from './Signature';
-
-// Example photo URL (you can replace this with your own photo URL)
-const photoUrl =
-  'https://cdn.prod.website-files.com/621594d45d719e0f9cffb843/62daff7f5c8b5c251732a08c_pov-feature.jpeg';
+import overviewImg from '../../imgs/overview.jpg';
 
 const Overview = () => {
   const text = `
@@ -14,7 +11,7 @@ const Overview = () => {
     الإنجازات الأكاديمية.
   `;
 
-  return <LayoutWithImage photoUrls={[photoUrl]} text={text} signature={<Signature />} />;
+  return <LayoutWithImage photoUrls={[overviewImg]} text={text} signature={<Signature />} />;
 };
 
 export default Overview;

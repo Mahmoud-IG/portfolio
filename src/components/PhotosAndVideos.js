@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import { FaPlay, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import Modal from 'react-modal';
+import imgPlaceholder from '../../imgs/img-ph-150.png';
+import sampleVideo from '../../vids/mov_bbb.mp4';
 
-// Modal styling
-Modal.setAppElement('#root'); // Set the root element for accessibility
+Modal.setAppElement('#root');
 
 const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increased min size to 300px */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 15px;
   padding: 95px 20px 20px 20px;
 `;
@@ -64,7 +65,7 @@ const ViewerContent = styled.div`
   max-width: 900px;
   min-width: 400px;
   min-height: 400px;
-  max-height: calc(100vh - 75px); /* Consider topbar height */
+  max-height: calc(100vh - 75px);
   overflow: hidden;
   background: white;
   border-radius: 8px;
@@ -72,7 +73,7 @@ const ViewerContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; /* Align items vertically */
+  flex-direction: column;
   margin-top: 200px;
   background-color: black;
 `;
@@ -111,11 +112,11 @@ const NavButton = styled.button`
 `;
 
 const media = [
-  { type: 'image', src: 'https://via.placeholder.com/600x400', alt: 'Sample Image 1' },
-  { type: 'image', src: 'https://via.placeholder.com/600x400', alt: 'Sample Image 2' },
-  { type: 'video', src: 'https://www.w3schools.com/html/mov_bbb.mp4', alt: 'Sample Video 1' },
-  { type: 'image', src: 'https://via.placeholder.com/600x400', alt: 'Sample Image 3' },
-  { type: 'video', src: 'https://www.w3schools.com/html/mov_bbb.mp4', alt: 'Sample Video 2' },
+  { type: 'image', src: imgPlaceholder, alt: 'Sample Image 1' },
+  { type: 'image', src: imgPlaceholder, alt: 'Sample Image 2' },
+  { type: 'video', src: sampleVideo, alt: 'Sample Video 1' },
+  { type: 'image', src: imgPlaceholder, alt: 'Sample Image 3' },
+  { type: 'video', src: sampleVideo, alt: 'Sample Video 2' },
 ];
 
 const PhotosAndVideos = () => {
