@@ -1,7 +1,7 @@
 {
-  "name": "tictactoe-game-client",
+  "name": "mahmoud-portfolio",
   "version": "1.0.0",
-  "description": "Tic Tac Toe Game - client side",
+  "description": "Mahmoud portfolio site",
   "main": "index.js",
   "scripts": {
     "watch": "webpack-dev-server --mode development --open",
