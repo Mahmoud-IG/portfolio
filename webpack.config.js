@@ -25,29 +25,27 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(jpg|jpeg|png|gif|svg)$/,
-        include: path.resolve(__dirname, 'imgs'), // Path to the 'imgs' folder in the root
+        test: /\.(jpg|jpeg|png|gif|svg|ico)$/,
+        include: path.resolve(__dirname, 'imgs'),
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'imgs/', // Output path in 'dist' folder
-              publicPath: '/imgs/', // Public URL
+              outputPath: 'imgs/',
             },
           },
         ],
       },
       {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)$/,
-        include: path.resolve(__dirname, 'vids'), // Path to the 'vids' folder in the root
+        include: path.resolve(__dirname, 'vids'),
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'vids/', // Output path in 'dist' folder
-              publicPath: '/vids/', // Public URL
+              outputPath: 'vids/',
             },
           },
         ],
@@ -59,7 +57,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html',
+      template: './index.html',
     }),
   ],
 };
