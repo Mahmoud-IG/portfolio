@@ -1,0 +1,33 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Replace with your main branch name
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: yarn install # Use yarn to install dependencies
+
+      - name: Build project
+        run: yarn build # Build the project using yarn
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --global user.email "mahmoud.16.6.ig@gmail.com"
+          git config --global user.name "Mahmoud-IG"
+          git checkout --orphan gh-pages
+          git rm -rf .
+          mv dist/* .
+          rm -r dist
+          git add .
+          git commit -m "Deploy to GitHub Pages"
+          git branch -D gh-pages  # Delete gh-pages branch if it exists
+          git branch -m gh-pages
+          git push -f origin gh-pages
