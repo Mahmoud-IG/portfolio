@@ -1,15 +1,12 @@
-import React from 'react';
-import Section from './Section';
-import { FaChalkboardTeacher } from 'react-icons/fa';
-
-
-
-
+import React from "react";
+import Section from "./Section";
+import { FaChalkboardTeacher } from "react-icons/fa";
+import imgPlaceholder from "../../imgs/img-ph-150.png";
 
 // Example text for each section
 const sections = [
   {
-    id: 'id1',
+    id: "id1",
     icon: <FaChalkboardTeacher size={30} />,
     title: 'الدرس الاول: "مفهوم الـ "algorithm""',
     text: `
@@ -25,15 +22,28 @@ const sections = [
 
 هذا الدرس كان يهدف إلى تعزيز فهم الطلاب لمفهوم الـ Algorithm من خلال مشاهدة فيديو تعليمي ومناقشة مفصلة. الطلاب تفاعلوا بشكل فعّال مع الموضوع من خلال النقاش والتقييم الفوري لفهمهم. كانت استجابة الطلاب نشطة ومتفاعلة خلال النقاش، حيث قدموا أمثلة من واقعهم لتطبيقات الـ Algorithm في حياتهم اليومية. بعض الطلاب احتاجوا إلى دعم إضافي لفهم بعض المفاهيم الأساسية، لذا قمت بتقديم شروحات إضافية وأمثلة توضيحية لهم. كان هذا الدرس الأول بمثابة بداية رحلة تعليمية مثيرة، حيث شعرت بأنني نجحت في إلهام الطلاب وإثارة فضولهم نحو عالم البرمجة والحاسوب
       `,
-      links: [
-        { href: 'https://docs.google.com/document/d/1P5nCClAKUr-8V4Wdr7c8id5R35FRW5DPTOAoNFGOp4k/edit', title: 'مستند: "مخطط الدرس"' },
-        { href: 'https://docs.google.com/document/d/1y5eIFXezmS3b_3OP5WK_xflyuM6V1B0L3q2bGUxmuSc/edit', title: 'مستند: "مجرى الدرس"' },
-      ],
+    links: [
+      {
+        href: "https://docs.google.com/document/d/1P5nCClAKUr-8V4Wdr7c8id5R35FRW5DPTOAoNFGOp4k/edit",
+        title: 'مستند: "مخطط الدرس"',
+      },
+      {
+        href: "https://docs.google.com/document/d/1y5eIFXezmS3b_3OP5WK_xflyuM6V1B0L3q2bGUxmuSc/edit",
+        title: 'مستند: "مجرى الدرس"',
+      },
+    ],
+    images: [
+      { src: imgPlaceholder, alt: "Sample Image 1" },
+      { src: imgPlaceholder, alt: "Sample Image 2" },
+      { src: imgPlaceholder, alt: "Sample Image 3" },
+      { src: imgPlaceholder, alt: "Sample Image 4" },
+    ],
   },
   {
-    id: 'id2',
+    id: "id2",
     icon: <FaChalkboardTeacher size={30} />,
-    title: 'الدرس الثاني: "فهم مفهوم الـ Algorithm وتطبيقه في لعبة Tower of Hanoi"',
+    title:
+      'الدرس الثاني: "فهم مفهوم الـ Algorithm وتطبيقه في لعبة Tower of Hanoi"',
     text: `    في يوم 23 يناير 2024، قدمت درسًا شيقًا وممتعًا للطلاب في مساق "التجربة العملية" تحت إشراف المعلمة فاطمة كبها، وكان عنوان الدرس "فهم مفهوم الـ Algorithm وتطبيقه في لعبة Tower of Hanoi". استهدف الدرس طلاب الصف العاشر واستمر لمدة 45 دقيقة.
 
 بدأت الدرس باستقبال الطلاب بحفاوة وتقديم أهداف الدرس، موضحة لهم أهمية فهم الـ Algorithm في علم الحاسوب وأثره في حل المشكلات المعقدة. هدفت هذه المرحلة إلى إثارة اهتمام الطلاب وتحفيزهم على المشاركة الفعّالة.
@@ -51,12 +61,24 @@ const sections = [
 استجابة الطلاب كانت نشطة ومليئة بالحماس، حيث أظهروا اهتمامًا كبيرًا خلال حل تحديات اللعبة. بعض الطلاب تمكنوا من تطبيق استراتيجيات مختلفة لحل المشكلة، مما أثر إيجابيًا على تعلمهم وتفكيرهم اللوجستي. هذا الدرس كان بداية ناجحة لرحلة تعليمية ممتعة ومليئة بالتحديات، حيث شعرت بأنني نجحت في إثارة فضول الطلاب نحو عالم البرمجة وتطبيقات الـ Algorithm.
   `,
     links: [
-      { href: 'https://docs.google.com/document/d/1k5y9L1o0Jp41lAAsMNfMN7GP7BdQTfqNEW2Z8IxAjA4/edit', title: 'مستند: "مخطط الدرس"' },
-      { href: 'https://docs.google.com/document/d/1exD29_2plSoXtJrCJWuMPS9b_RY98y4FlUze3o6NIQk/edit', title: 'مستند: "مجرى الدرس"' },
+      {
+        href: "https://docs.google.com/document/d/1k5y9L1o0Jp41lAAsMNfMN7GP7BdQTfqNEW2Z8IxAjA4/edit",
+        title: 'مستند: "مخطط الدرس"',
+      },
+      {
+        href: "https://docs.google.com/document/d/1exD29_2plSoXtJrCJWuMPS9b_RY98y4FlUze3o6NIQk/edit",
+        title: 'مستند: "مجرى الدرس"',
+      },
+    ],
+    images: [
+      { src: imgPlaceholder, alt: "Sample Image 1" },
+      { src: imgPlaceholder, alt: "Sample Image 2" },
+      { src: imgPlaceholder, alt: "Sample Image 3" },
+      { src: imgPlaceholder, alt: "Sample Image 4" },
     ],
   },
   {
-    id: 'id3',
+    id: "id3",
     icon: <FaChalkboardTeacher size={30} />,
     title: 'الدرس الثالث: "توضيح طريقة فهم الحاسوب لنا"',
     text: `   في يوم 25 يناير 2024، قدمت أنا وزملائي من طلاب أكاديمية القاسمي: غزل غانم، آلاء حامد، سدن حرز الله، آية جزماوي، وأشرف مصاروة، درسًا تفاعليًا لطلاب الصف العاشر في مساق "التجربة العملية" تحت إشراف المعلمة فاطمة كبها. كان الدرس بعنوان "مفهوم الـ Algorithm وتطبيقه في لعبة Tower of Hanoi"، كبداية لسلسلة ثلاث دروس الدرس الاول استمر لمدة 45 دقيقة في الصف. هذا الدرس كان مشابهًا لدرس سابق لكنه موجه لشعبة أخرى من الصف العاشر.
@@ -72,13 +94,28 @@ const sections = [
 وفي الختام تم تجهيز غرف الحاسوب لفعالية الدرسين التاليين.
    `,
     links: [
-      { href: 'https://docs.google.com/document/d/1MaBDEYgpNO5w5EI75IyeMbUM_eAkJ0H_V-9gLGP70LM/edit', title: 'مستند: "مخطط الدرس"' },
-      { href: 'https://docs.google.com/document/d/1jM6nKNb5ewJHR42OtjeZxKulu0RhiRIfPUw8F1Kxd5A/edit', title: 'مستند: "مجرى الدرس"' },
-      { href: 'https://docs.google.com/presentation/d/1lPzx1qlhKXSXHa0mLvfS0OpoKT2DQia6RoOSRkq9Tuw/edit#slide=id.p', title: 'مستند: "معروضة الدرس"' },
+      {
+        href: "https://docs.google.com/document/d/1MaBDEYgpNO5w5EI75IyeMbUM_eAkJ0H_V-9gLGP70LM/edit",
+        title: 'مستند: "مخطط الدرس"',
+      },
+      {
+        href: "https://docs.google.com/document/d/1jM6nKNb5ewJHR42OtjeZxKulu0RhiRIfPUw8F1Kxd5A/edit",
+        title: 'مستند: "مجرى الدرس"',
+      },
+      {
+        href: "https://docs.google.com/presentation/d/1lPzx1qlhKXSXHa0mLvfS0OpoKT2DQia6RoOSRkq9Tuw/edit#slide=id.p",
+        title: 'مستند: "معروضة الدرس"',
+      },
+    ],
+    images: [
+      { src: imgPlaceholder, alt: "Sample Image 1" },
+      { src: imgPlaceholder, alt: "Sample Image 2" },
+      { src: imgPlaceholder, alt: "Sample Image 3" },
+      { src: imgPlaceholder, alt: "Sample Image 4" },
     ],
   },
   {
-    id: 'id4',
+    id: "id4",
     icon: <FaChalkboardTeacher size={30} />,
     title: 'الدرس الرابع: "مقدمة إلى مفاهيم البرمجة من خلال الألعاب"',
     text: `   في يوم 25 يناير 2024، قدمت أنا وزملائي من طلاب أكاديمية القاسمي: غزل غانم، آلاء حامد، سدن حرز الله، آية جزماوي، وأشرف مصاروة، درسًا تفاعليًا آخر لطلاب الصف العاشر في مساق "التجربة العملية" تحت إشراف المعلمة فاطمة كبها. كان الدرس بعنوان "مقدمة إلى مفاهيم البرمجة من خلال الألعاب"، واستمر لمدة 45 دقيقة. هذا الدرس هو الدرس الثاني من سلسلة ثلاث دروس، وكان بمثابة تكملة للدرس السابق.
@@ -98,13 +135,28 @@ const sections = [
 هذا الدرس كان يهدف إلى تعزيز فهم الطلاب لمفاهيم البرمجة من خلال الأنشطة التفاعلية على منصة Hour of Code. تفاعل الطلاب بشكل فعّال مع الألعاب، وتنافسوا لتصميم وتعديل الألعاب بأفكارهم الإبداعية، مما ساهم في تعزيز مهاراتهم في التفكير النقدي والتحليل المنطقي. كانت استجابة الطلاب نشطة ومليئة بالحماس، حيث أظهروا اهتمامًا كبيرًا خلال الأنشطة التفاعلية. بعض الطلاب تمكنوا من تطبيق المفاهيم بطرق مبتكرة، مما أثر إيجابيًا على تعلمهم وتفكيرهم الإبداعي. هذا الدرس كان بداية ناجحة لرحلة تعليمية ممتعة ومليئة بالتحديات، حيث شعرنا جميعًا بأننا نجحنا في إثارة فضول الطلاب نحو عالم البرمجة وتطبيقاتها الممتعة.
    `,
     links: [
-      { href: 'https://docs.google.com/document/d/1099OG3sXS4G6TQSfiffg9AS7Fx8G3jjYsrkzVudXf3w/edit', title: 'مستند: "مخطط الدرس"' },
-      { href: 'https://docs.google.com/document/d/17H-LmaL3AlIR3UchDVmXhSQucW9TeTMlX9CVt_gGA30/edit', title: 'مستند: "مجرى الدرس"' },
-      { href: 'https://docs.google.com/presentation/d/1lPzx1qlhKXSXHa0mLvfS0OpoKT2DQia6RoOSRkq9Tuw/edit#slide=id.p', title: 'مستند: "معروضة الدرس"' },
+      {
+        href: "https://docs.google.com/document/d/1099OG3sXS4G6TQSfiffg9AS7Fx8G3jjYsrkzVudXf3w/edit",
+        title: 'مستند: "مخطط الدرس"',
+      },
+      {
+        href: "https://docs.google.com/document/d/17H-LmaL3AlIR3UchDVmXhSQucW9TeTMlX9CVt_gGA30/edit",
+        title: 'مستند: "مجرى الدرس"',
+      },
+      {
+        href: "https://docs.google.com/presentation/d/1lPzx1qlhKXSXHa0mLvfS0OpoKT2DQia6RoOSRkq9Tuw/edit#slide=id.p",
+        title: 'مستند: "معروضة الدرس"',
+      },
+    ],
+    images: [
+      { src: imgPlaceholder, alt: "Sample Image 1" },
+      { src: imgPlaceholder, alt: "Sample Image 2" },
+      { src: imgPlaceholder, alt: "Sample Image 3" },
+      { src: imgPlaceholder, alt: "Sample Image 4" },
     ],
   },
   {
-    id: 'id5',
+    id: "id5",
     icon: <FaChalkboardTeacher size={30} />,
     title: 'الدرس الخامس: "التقييم والتأمل في مفاهيم البرمجة"',
     text: `   في يوم 25 يناير 2024، قدمت أنا وزملائي من طلاب أكاديمية القاسمي: غزل غانم، آلاء حامد، سدن حرز الله، آية جزماوي، وأشرف مصاروة، الدرس الثالث والأخير في سلسلة دروس البرمجة لطلاب الصف العاشر في مساق "التجربة العملية" تحت إشراف المعلمة فاطمة كبها. كان عنوان الدرس "التقييم والتأمل في مفاهيم البرمجة"، واستمر لمدة 45 دقيقة.
@@ -124,13 +176,28 @@ const sections = [
 كان هذا الدرس يهدف إلى تعزيز فهم الطلاب لمفاهيم البرمجة من خلال الأنشطة التفاعلية والتأمل في التعلم. تفاعل الطلاب بشكل فعّال مع الأنشطة، وأظهروا إبداعًا وابتكارًا في تصميم الألعاب. استجابة الطلاب كانت نشطة ومليئة بالحماس، حيث أبدوا اهتمامًا كبيرًا بمستقبلهم في مجال علوم الحاسوب. هذا الدرس كان تتويجًا ناجحًا لسلسلة دروس تعليمية ممتعة ومليئة بالتحديات، حيث شعرنا جميعًا بأننا نجحنا في إثارة فضول الطلاب نحو البرمجة وتحفيزهم على استكشاف هذا العالم المثير.
    `,
     links: [
-      { href: 'https://docs.google.com/document/d/1EZ3jHy3Xn5EPCmeqkw2-qUPBz1H864gpPkgADScOqfM/edit', title: 'مستند: "مخطط الدرس"' },
-      { href: 'https://docs.google.com/document/d/12o7lKc4lVnCEvrf9LVZ6zRw7mqXh4ch4kcqkVCnj190/edit', title: 'مستند: "مجرى الدرس"' },
-      { href: 'https://docs.google.com/presentation/d/1lPzx1qlhKXSXHa0mLvfS0OpoKT2DQia6RoOSRkq9Tuw/edit#slide=id.p', title: 'مستند: "معروضة الدرس"' },
+      {
+        href: "https://docs.google.com/document/d/1EZ3jHy3Xn5EPCmeqkw2-qUPBz1H864gpPkgADScOqfM/edit",
+        title: 'مستند: "مخطط الدرس"',
+      },
+      {
+        href: "https://docs.google.com/document/d/12o7lKc4lVnCEvrf9LVZ6zRw7mqXh4ch4kcqkVCnj190/edit",
+        title: 'مستند: "مجرى الدرس"',
+      },
+      {
+        href: "https://docs.google.com/presentation/d/1lPzx1qlhKXSXHa0mLvfS0OpoKT2DQia6RoOSRkq9Tuw/edit#slide=id.p",
+        title: 'مستند: "معروضة الدرس"',
+      },
+    ],
+    images: [
+      { src: imgPlaceholder, alt: "Sample Image 1" },
+      { src: imgPlaceholder, alt: "Sample Image 2" },
+      { src: imgPlaceholder, alt: "Sample Image 3" },
+      { src: imgPlaceholder, alt: "Sample Image 4" },
     ],
   },
   {
-    id: 'id6',
+    id: "id6",
     icon: <FaChalkboardTeacher size={30} />,
     title: 'الدرس السادس: "مفهوم الخصوصية والأمان"',
     text: `في يوم 16 مايو 2024، قمت بتقديم درس حول "مفهوم الخصوصية والأمان" لطلاب الصف العاشر في مساق "التجربة العملية" تحت إشراف المعلمة فاطمة كبها. استمر الدرس لمدة 45 دقيقة وكان مليئًا بالتفاعلات والنقاشات المثمرة.
@@ -150,13 +217,28 @@ const sections = [
 لاحظت تفاعلًا إيجابيًا من الطلاب واهتمامًا بحل التحديات المتعلقة بحماية الخصوصية. كانت استجابة الطلاب نشطة ومليئة بالحماس، حيث أظهروا اهتمامًا كبيرًا بمفهوم الخصوصية والأمان وكيفية تطبيقه في حياتهم اليومية. هذا الدرس كان بداية ناجحة لرحلة تعليمية مثيرة، حيث شعرت بأنني نجحت في إلهام الطلاب وزيادة وعيهم حول أهمية الخصوصية في العصر الرقمي.
 `,
     links: [
-      { href: 'https://docs.google.com/document/d/1-LfzfrHRY5QRrzeP68iCsyZHXl2QO7JMOB770cRc9qc/edit', title: 'مستند: "مخطط الدرس"' },
-      { href: 'https://docs.google.com/document/d/1t4L0O4mwoSR6S0iRk0YuUX5K8wYcB5j0NId90FoNYD4/edit', title: 'مستند: "مجرى الدرس"' },
-      { href: 'https://docs.google.com/presentation/d/1VW8EqdRaPbPaGSMgt2EJ48S_jKvdUS4yKPwQP69TssA/edit#slide=id.p', title: 'مستند: "معروضة الدرس"' },
+      {
+        href: "https://docs.google.com/document/d/1-LfzfrHRY5QRrzeP68iCsyZHXl2QO7JMOB770cRc9qc/edit",
+        title: 'مستند: "مخطط الدرس"',
+      },
+      {
+        href: "https://docs.google.com/document/d/1t4L0O4mwoSR6S0iRk0YuUX5K8wYcB5j0NId90FoNYD4/edit",
+        title: 'مستند: "مجرى الدرس"',
+      },
+      {
+        href: "https://docs.google.com/presentation/d/1VW8EqdRaPbPaGSMgt2EJ48S_jKvdUS4yKPwQP69TssA/edit#slide=id.p",
+        title: 'مستند: "معروضة الدرس"',
+      },
+    ],
+    images: [
+      { src: imgPlaceholder, alt: "Sample Image 1" },
+      { src: imgPlaceholder, alt: "Sample Image 2" },
+      { src: imgPlaceholder, alt: "Sample Image 3" },
+      { src: imgPlaceholder, alt: "Sample Image 4" },
     ],
   },
   {
-    id: 'id7',
+    id: "id7",
     icon: <FaChalkboardTeacher size={30} />,
     title: 'الدرس السابع: "مخاطر اختراق الخصوصية و أنواع الإختراقات"',
     text: `في يوم 16 مايو 2024، قمت بتقديم درس حول "مخاطر اختراق الخصوصية وأنواع الاختراقات" لطلاب الصف العاشر في مساق "التجربة العملية" تحت إشراف المعلمة فاطمة كبها. استمر الدرس لمدة 45 دقيقة وكان مليئًا بالتفاعلات والنقاشات المثمرة.
@@ -174,13 +256,28 @@ const sections = [
 في الختام، كان هذا الدرس فرصة رائعة لتعزيز وعي الطلاب بمخاطر اختراق الخصوصية وأهمية حماية معلوماتهم الشخصية. كانت الأجواء مليئة بالحماس والتفاعل، حيث شعرت بأنني نجحت في إيصال المفاهيم بطرق ممتعة ومثيرة للاهتمام، مما ساعد الطلاب على استيعاب المعلومات بشكل أفضل وترك انطباعًا إيجابيًا لديهم حول أهمية الأمان الرقمي في حياتهم اليومية.
 `,
     links: [
-      { href: 'https://docs.google.com/document/d/1Vvs4ViPEgn5DX4KtNt2OObnn8BwvxtBMAbU89_aPHN4/edit', title: 'مستند: "مخطط الدرس"' },
-      { href: 'https://docs.google.com/document/d/19vSBhdoWBBbm3tyCB29aGvd2LyXnaqR0YAkKLuhDMNk/edit', title: 'مستند: "مجرى الدرس"' },
-      { href: 'https://docs.google.com/presentation/d/1X1S9hpi-01oU8J7zsx9JhzLxI0HTUnINpD37nGLb1a0/edit#slide=id.g2e91965dc05_0_957', title: 'مستند: "معروضة الدرس"' },
+      {
+        href: "https://docs.google.com/document/d/1Vvs4ViPEgn5DX4KtNt2OObnn8BwvxtBMAbU89_aPHN4/edit",
+        title: 'مستند: "مخطط الدرس"',
+      },
+      {
+        href: "https://docs.google.com/document/d/19vSBhdoWBBbm3tyCB29aGvd2LyXnaqR0YAkKLuhDMNk/edit",
+        title: 'مستند: "مجرى الدرس"',
+      },
+      {
+        href: "https://docs.google.com/presentation/d/1X1S9hpi-01oU8J7zsx9JhzLxI0HTUnINpD37nGLb1a0/edit#slide=id.g2e91965dc05_0_957",
+        title: 'مستند: "معروضة الدرس"',
+      },
+    ],
+    images: [
+      { src: imgPlaceholder, alt: "Sample Image 1" },
+      { src: imgPlaceholder, alt: "Sample Image 2" },
+      { src: imgPlaceholder, alt: "Sample Image 3" },
+      { src: imgPlaceholder, alt: "Sample Image 4" },
     ],
   },
   {
-    id: 'id8',
+    id: "id8",
     icon: <FaChalkboardTeacher size={30} />,
     title: 'الدرس الثامن: "שפת סף"',
     text: `   في يوم 6 فبراير 2024، قمت بتقديم درس حول "لغة التجميع" (Assembly) لطلاب الصف العاشر في مساق "التجربة العملية" تحت إشراف المعلمة فاطمة كبها. استمر الدرس لمدة 45 دقيقة وكان مليئًا بالتفاعل والحماس. كما قامت المعلمة فاطمة كبها بمراقبة الدرس لتقييمه وتقديم ملاحظاتها، وشارك المعلم مهند أيضًا في مشاهدة بعض أجزاء من الدرس.
@@ -194,9 +291,24 @@ const sections = [
 هذا الدرس كان فرصة رائعة لتعزيز مهارات التفكير النقدي والابتكاري لدى الطلاب، وربط المفاهيم البرمجية بلغة التجميع. شعرت بالفخر لنجاحي في إيصال المعلومات بطريقة ممتعة ومفيدة، مما ساعد الطلاب على فهم واستخدام لغة التجميع بشكل أفضل.
    `,
     links: [
-      { href: 'https://docs.google.com/document/d/1bWEFFCXaLZdPYSf2QF-UKzdiezFS5MSM7CdQRIxZmYQ/edit', title: 'مستند: "مخطط الدرس"' },
-      { href: 'https://docs.google.com/document/d/1q-LLF_ZKGDYNY7JoxnPE7CzvCt6l6e-g-ZKdi1J4MiM/edit', title: 'مستند: "مجرى الدرس"' },
-      { href: 'https://docs.google.com/presentation/d/1F1TG0q_yr6AfX_eIsZpS2SkQEzZ1hTED5ntf7GtvHAM/edit#slide=id.p', title: 'مستند: "معروضة الدرس"' },
+      {
+        href: "https://docs.google.com/document/d/1bWEFFCXaLZdPYSf2QF-UKzdiezFS5MSM7CdQRIxZmYQ/edit",
+        title: 'مستند: "مخطط الدرس"',
+      },
+      {
+        href: "https://docs.google.com/document/d/1q-LLF_ZKGDYNY7JoxnPE7CzvCt6l6e-g-ZKdi1J4MiM/edit",
+        title: 'مستند: "مجرى الدرس"',
+      },
+      {
+        href: "https://docs.google.com/presentation/d/1F1TG0q_yr6AfX_eIsZpS2SkQEzZ1hTED5ntf7GtvHAM/edit#slide=id.p",
+        title: 'مستند: "معروضة الدرس"',
+      },
+    ],
+    images: [
+      { src: imgPlaceholder, alt: "Sample Image 1" },
+      { src: imgPlaceholder, alt: "Sample Image 2" },
+      { src: imgPlaceholder, alt: "Sample Image 3" },
+      { src: imgPlaceholder, alt: "Sample Image 4" },
     ],
   },
 ];
@@ -213,6 +325,7 @@ const LessonPlanning = () => {
           date={section.date}
           text={section.text}
           links={section.links}
+          images={section.images}
         />
       ))}
     </div>

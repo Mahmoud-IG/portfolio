@@ -49,6 +49,20 @@ const sections = [
       { src: imgPlaceholder, alt: "Sample Image 3" },
       { src: imgPlaceholder, alt: "Sample Image 4" },
     ],
+    links: [
+      {
+        href: "https://docs.google.com/document/d/1P5nCClAKUr-8V4Wdr7c8id5R35FRW5DPTOAoNFGOp4k/edit",
+        title: 'مستند: "مخطط الدرس"',
+      },
+      {
+        href: "https://docs.google.com/document/d/1y5eIFXezmS3b_3OP5WK_xflyuM6V1B0L3q2bGUxmuSc/edit",
+        title: 'مستند: "مجرى الدرس"',
+      },
+      {
+        href: "https://docs.google.com/document/d/1y5eIFXezmS3b_3OP5WK_xflyuM6V1B0L3q2bGUxmuSc/edit",
+        title: 'مستند: "معروضة الدرس"',
+      },
+    ],
   },
 ];
 
@@ -64,6 +78,7 @@ const LearningCenter = () => {
           date={section.date}
           text={section.text}
           images={section.images}
+          links={section.links}
         />
       ))}
     </div>
