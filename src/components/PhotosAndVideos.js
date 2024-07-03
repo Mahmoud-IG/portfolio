@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import styled from "@emotion/styled";
 import { FaPlay, FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Modal from "react-modal";
-import imgPlaceholder from "../../imgs/img-ph-150.png";
-import sampleVideo from "../../vids/mov_bbb.mp4";
-import img1 from "../../imgs/ODT/img1.jpg";
+import { getImages, getVideos } from '../assets';
 
 Modal.setAppElement("#root");
 
@@ -112,14 +110,9 @@ const NavButton = styled.button`
   ${({ direction }) => direction === "right" && "right: 10px;"}
 `;
 
-const media = [
-  { type: "image", src: imgPlaceholder, alt: "Sample Image 1" },
-  { type: "image", src: imgPlaceholder, alt: "Sample Image 2" },
-  { type: "video", src: sampleVideo, alt: "Sample Video 1" },
-  { type: "image", src: imgPlaceholder, alt: "Sample Image 3" },
-  { type: "video", src: sampleVideo, alt: "Sample Video 2" },
-  { type: "image", src: img1, alt: "Sample Image 3" },
-];
+const allImgs = getImages();
+const allVids = getVideos();
+const media = [...allImgs, ...allVids];
 
 const PhotosAndVideos = () => {
   const [selectedMediaIndex, setSelectedMediaIndex] = useState(null);

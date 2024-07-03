@@ -31,8 +31,10 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
+              name: '[path][name].[ext]',
+              context: path.resolve(__dirname, 'imgs'),
               outputPath: 'imgs/',
+              publicPath: 'imgs/',
             },
           },
         ],
@@ -44,8 +46,10 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
+              name: '[path][name].[ext]',
+              context: path.resolve(__dirname, 'vids'),
               outputPath: 'vids/',
+              publicPath: 'vids/',
             },
           },
         ],
