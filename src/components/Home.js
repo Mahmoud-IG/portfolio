@@ -1,24 +1,50 @@
-import React from "react";
-import LayoutWithImage from "./LayoutWithImage";
-import Signature from "./Signature";
-import shamelaImg1 from "../../imgs/shamela-school-01.jpg";
-import shamelaImg2 from "../../imgs/shamela-school-02.jpg";
+import React, { useEffect, useRef } from 'react';
+import styled from '@emotion/styled';
+import videoSrc from '../../vids/mahmoud_intro.mp4';
+
+const Container = styled.div`
+  height: calc(100vh - 75px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  margin-top: 75px;
+`;
+
+const VideoWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+`;
+
+const StyledVideo = styled.video`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none; /* Prevents user interaction */
+`;
 
 const Home = () => {
-  const text = `
-    مرحبًا بكم في بورتفوليو التطبيقات العملية الخاص بي, حيث تتجلى رحلتي التعليمية في علم الحاسوب بكل تفاصيلها. \n\n
-    في هذا الموقع، أشارككم تجربتي في المدرسة الشاملة الثانوية في أم الفحم، حيث أمارس وأعمل على تطبق هذه التجارب لأصبح معلمًا في المستقبل. 
-    وعبر صفحات هذا الموقع، ستجدون مشاهدات عملية، خطط دروس محكمة، تغذية راجعة بناءة، ونظرة شاملة على العام الدراسي، بالإضافة إلى صور وفيديوهات توثّق هذه الرحلة المليئة بالشغف والتحدي.
-    في هذا الموقع ستجدون انعكاسًا حقيقيًا لتجربتي التعليمية, من خلال استكشافكم لهذه الصفحات والاستمتاع برؤية كيف تتكامل النظرية مع التطبيق في رحلتي التعليمية. 
-    آمل أن تجدوا في هذه التجربة إلهامًا وتحفيزًا للاستمرار في التعلم والتطوير المستمر.
-  `;
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  }, []);
 
   return (
-    <LayoutWithImage
-      photoUrls={[shamelaImg1, shamelaImg2]}
-      text={text}
-      signature={<Signature />}
-    />
+    <Container>
+      <VideoWrapper>
+        <StyledVideo ref={videoRef} loop autoPlay muted>
+          <source src={videoSrc} type="video/mp4" />
+          Your browser does not support the video tag.
+        </StyledVideo>
+      </VideoWrapper>
+    </Container>
   );
 };
 
