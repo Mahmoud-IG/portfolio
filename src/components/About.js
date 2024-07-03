@@ -4,7 +4,7 @@ import Signature from "./Signature";
 import Section from "./Section";
 import { FaBook, FaRegBuilding, FaUser, FaUsers } from "react-icons/fa";
 import ScrollArrow from "./ScrollArrow";
-import myImg from "../../imgs/me.jpg";
+import myImg from "../../imgs/me/img16.jpg";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import imgPlaceholder from "../../imgs/img-ph-150.png";
 import { FaChartLine } from "react-icons/fa";
