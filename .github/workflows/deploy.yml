@@ -18,8 +18,8 @@ jobs:
 
       - name: Deploy
         run: |
-          git config --global user.email 'github-actions@github.com'
-          git config --global user.name 'github-actions'
+          git config --global user.email "mahmoud.16.6.ig@gmail.com"
+          git config --global user.name "Mahmoud-IG"
           git remote set-url origin https://${{ secrets.PAT }}@github.com/Mahmoud-IG/portfolio.git
           git checkout --orphan gh-pages
           git rm -rf .
