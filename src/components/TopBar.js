@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import styled from "@emotion/styled";
+import { NavLink } from "react-router-dom";
 import {
   FaHome,
   FaEye,
@@ -12,8 +12,8 @@ import {
   FaFileAlt,
   FaChartBar,
   FaUser,
-} from 'react-icons/fa'; // Importing FontAwesome icons
-import { MAIN_BG_COLOR, MAIN_TEXT_COLOR, SECONDARY_TEXT_COLOR } from '../style';
+} from "react-icons/fa"; // Importing FontAwesome icons
+import { MAIN_BG_COLOR, MAIN_TEXT_COLOR, SECONDARY_TEXT_COLOR } from "../style";
 
 const TopBarContainer = styled.div`
   width: 100%;
@@ -61,16 +61,16 @@ const TopBarLink = styled(NavLink)`
 `;
 
 const links = [
-  { path: '/', name: 'الرئيسة', icon: <FaHome /> },
-  { path: '/about', name: 'من أنا', icon: <FaUser /> },
-  { path: '/observations', name: 'المشاهدات', icon: <FaEye /> },
-  { path: '/lessonPlanning', name: 'تخطيط وسيرورة الدروس', icon: <FaBook /> },
-  { path: '/activities', name: 'الفعاليات اللامنهجية', icon: <FaTasks /> },
-  { path: '/feedback', name: 'تغذية مرتدة', icon: <FaComments /> },
-  { path: '/learningCenter', name: 'مركز التعلم', icon: <FaUniversity /> },
-  { path: '/photosAndVideos', name: 'صور وفيديوهات', icon: <FaCamera /> },
-  { path: '/summary', name: 'الإجمال', icon: <FaFileAlt /> },
-  { path: '/overview', name: 'نظرة إلى العام الدراسي', icon: <FaChartBar /> },
+  { path: "/", name: "الرئيسة", icon: <FaHome /> },
+  { path: "/about", name: "من أنا", icon: <FaUser /> },
+  { path: "/observations", name: "المشاهدات", icon: <FaEye /> },
+  { path: "/lessonPlanning", name: "تخطيط وسيرورة الدروس", icon: <FaBook /> },
+  { path: "/activities", name: "الفعاليات اللامنهجية", icon: <FaTasks /> },
+  { path: "/learningCenter", name: "مركز التعلم", icon: <FaUniversity /> },
+  { path: "/feedback", name: "تغذية مرتدة", icon: <FaComments /> },
+  { path: "/photosAndVideos", name: "صور وفيديوهات", icon: <FaCamera /> },
+  { path: "/summary", name: "الإجمال", icon: <FaFileAlt /> },
+  { path: "/overview", name: "نظرة إلى العام الدراسي", icon: <FaChartBar /> },
 ];
 
 const TopBar = () => {
@@ -78,7 +78,12 @@ const TopBar = () => {
     <TopBarContainer>
       <NavLinks>
         {links.map((link) => (
-          <TopBarLink key={link.path} to={link.path} activeClassName="active" exact>
+          <TopBarLink
+            key={link.path}
+            to={link.path}
+            activeClassName="active"
+            exact
+          >
             {link.icon}
             {link.name}
           </TopBarLink>

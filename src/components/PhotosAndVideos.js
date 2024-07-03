@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-import styled from '@emotion/styled';
-import { FaPlay, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import Modal from 'react-modal';
-import imgPlaceholder from '../../imgs/img-ph-150.png';
-import sampleVideo from '../../vids/mov_bbb.mp4';
+import React, { useState } from "react";
+import styled from "@emotion/styled";
+import { FaPlay, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Modal from "react-modal";
+import imgPlaceholder from "../../imgs/img-ph-150.png";
+import sampleVideo from "../../vids/mov_bbb.mp4";
+import img1 from "../../imgs/ODT/img1.jpg";
 
-Modal.setAppElement('#root');
+Modal.setAppElement("#root");
 
 const GridContainer = styled.div`
   display: grid;
@@ -107,16 +108,17 @@ const NavButton = styled.button`
     color: #ff0000;
   }
 
-  ${({ direction }) => direction === 'left' && 'left: 10px;'}
-  ${({ direction }) => direction === 'right' && 'right: 10px;'}
+  ${({ direction }) => direction === "left" && "left: 10px;"}
+  ${({ direction }) => direction === "right" && "right: 10px;"}
 `;
 
 const media = [
-  { type: 'image', src: imgPlaceholder, alt: 'Sample Image 1' },
-  { type: 'image', src: imgPlaceholder, alt: 'Sample Image 2' },
-  { type: 'video', src: sampleVideo, alt: 'Sample Video 1' },
-  { type: 'image', src: imgPlaceholder, alt: 'Sample Image 3' },
-  { type: 'video', src: sampleVideo, alt: 'Sample Video 2' },
+  { type: "image", src: imgPlaceholder, alt: "Sample Image 1" },
+  { type: "image", src: imgPlaceholder, alt: "Sample Image 2" },
+  { type: "video", src: sampleVideo, alt: "Sample Video 1" },
+  { type: "image", src: imgPlaceholder, alt: "Sample Image 3" },
+  { type: "video", src: sampleVideo, alt: "Sample Video 2" },
+  { type: "image", src: img1, alt: "Sample Image 3" },
 ];
 
 const PhotosAndVideos = () => {
@@ -131,21 +133,26 @@ const PhotosAndVideos = () => {
   };
 
   const showPrevMedia = () => {
-    setSelectedMediaIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : media.length - 1));
+    setSelectedMediaIndex((prevIndex) =>
+      prevIndex > 0 ? prevIndex - 1 : media.length - 1
+    );
   };
 
   const showNextMedia = () => {
-    setSelectedMediaIndex((prevIndex) => (prevIndex < media.length - 1 ? prevIndex + 1 : 0));
+    setSelectedMediaIndex((prevIndex) =>
+      prevIndex < media.length - 1 ? prevIndex + 1 : 0
+    );
   };
 
-  const selectedMedia = selectedMediaIndex !== null ? media[selectedMediaIndex] : null;
+  const selectedMedia =
+    selectedMediaIndex !== null ? media[selectedMediaIndex] : null;
 
   return (
     <>
       <GridContainer>
         {media.map((item, index) => (
           <MediaItem key={index} onClick={() => openViewer(index)}>
-            {item.type === 'video' ? (
+            {item.type === "video" ? (
               <>
                 <video src={item.src} />
                 <PlayIcon />
@@ -163,12 +170,17 @@ const PhotosAndVideos = () => {
           onRequestClose={closeViewer}
           contentLabel="Media Viewer"
           style={{
-            overlay: { backgroundColor: 'rgba(0, 0, 0, 0.8)' },
-            content: { background: 'none', border: 'none', padding: 'none', inset: 'unset' },
+            overlay: { backgroundColor: "rgba(0, 0, 0, 0.8)" },
+            content: {
+              background: "none",
+              border: "none",
+              padding: "none",
+              inset: "unset",
+            },
           }}
         >
           <ViewerContent>
-            {selectedMedia.type === 'video' ? (
+            {selectedMedia.type === "video" ? (
               <video src={selectedMedia.src} controls autoPlay />
             ) : (
               <img src={selectedMedia.src} alt={selectedMedia.alt} />
