@@ -39,7 +39,7 @@ const Home = () => {
   return (
     <Container>
       <VideoWrapper>
-        <StyledVideo ref={videoRef} loop autoPlay>
+        <StyledVideo ref={videoRef} loop autoPlay muted>
           <source src={videoSrc} type="video/mp4" />
           Your browser does not support the video tag.
         </StyledVideo>
