@@ -1,5 +1,3 @@
-// src/assets.js
-
 // Create a context for images including subdirectories
 const images = require.context('../imgs', true, /\.(png|jpe?g|svg)$/);
 
