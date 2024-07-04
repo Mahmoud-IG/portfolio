@@ -8,6 +8,24 @@ import {
   FaUsers,
 } from "react-icons/fa";
 import imgPlaceholder from "../../imgs/img-ph-150.png";
+import imgmOdt1 from "../../imgs/ODT/img1.jpg";
+import imgmOdt2 from "../../imgs/ODT/img5.jpg";
+import imgmOdt3 from "../../imgs/ODT/img6.jpg";
+import imgmOdt4 from "../../imgs/ODT/img9.jpg";
+import imgmsportDay1 from "../../imgs/sports_day/img1.jpg";
+import imgmsportDay2 from "../../imgs/sports_day/img2.jpg";
+import imgmsportDay3 from "../../imgs/sports_day/img4.jpg";
+import imgmsportDay4 from "../../imgs/sports_day/img5.jpg";
+import imgmsci1 from "../../imgs/science_center/img1.jpg";
+import imgmsci2 from "../../imgs/science_center/img2.jpg";
+import imgmisraa1 from "../../imgs/israa_meraaj/img1.jpg";
+import imgmisraa2 from "../../imgs/israa_meraaj/img2.jpg";
+import imgmisraa3 from "../../imgs/israa_meraaj/img3.jpg";
+import imgmisraa4 from "../../imgs/israa_meraaj/img4.jpg";
+import imgm1 from "../../imgs/algorithm1_2/img17.jpg";
+import imgm2 from "../../imgs/algorithm1_2/img20.jpg";
+import imgm3 from "../../imgs/hour_of_code_4_5/img3.jpg";
+import imgm4 from "../../imgs/hour_of_code_4_5/img7.jpg";
 
 const sections = [
   {
@@ -31,10 +49,10 @@ const sections = [
 كان يوم حافل وممتع.
       `,
     images: [
-      { src: imgPlaceholder, alt: "Sample Image 1" },
-      { src: imgPlaceholder, alt: "Sample Image 2" },
-      { src: imgPlaceholder, alt: "Sample Image 3" },
-      { src: imgPlaceholder, alt: "Sample Image 4" },
+      { src: imgmOdt1, alt: "Sample Image 1" },
+      { src: imgmOdt2, alt: "Sample Image 2" },
+      { src: imgmOdt3, alt: "Sample Image 3" },
+      { src: imgmOdt4, alt: "Sample Image 4" },
     ],
   },
   {
@@ -60,11 +78,12 @@ const sections = [
 
 تم تقسيم الفعالية على مدار ثلاثة أيام لإتاحة الفرصة لجميع الطلاب من مختلف الطبقات في المدرسة للاستمتاع بالأنشطة. كانت الفعالية الأولى مخصصة لطلاب طبقة صفوف العواشر يوم الثلاثاء، والثانية لطلاب طبقة صفوف الحادي عشر يوم الأربعاء، والأخيرة لطلاب طبقة صفوف الثاني عشر يوم الخميس. كانت تجربة لا تُنسى مليئة بالتحدي، الضحك، والتعاون بين الجميع
       `,
-    images: [
-      { src: imgPlaceholder, alt: "Sample Image 1" },
-      { src: imgPlaceholder, alt: "Sample Image 2" },
-      { src: imgPlaceholder, alt: "Sample Image 3" },
-    ],
+      images: [
+        { src: imgmsportDay1, alt: "Sample Image 1" },
+        { src: imgmsportDay2, alt: "Sample Image 2" },
+        { src: imgmsportDay3, alt: "Sample Image 3" },
+        { src: imgmsportDay4, alt: "Sample Image 4" },
+      ],
   },
   {
     id: "id3",
@@ -87,11 +106,9 @@ const sections = [
 في ختام الفعالية، تم توزيع الجوائز على الطلاب الذين قدموا أفضل العروض، وتقدمت إدارة المدرسة بالشكر لكل من ساهم في إنجاح هذا اليوم الرائع. كان يوم العلوم تجربة تعليمية ممتعة ومليئة بالفخر لطلاب المدرسة، وأظهر قدراتهم العالية ومعرفتهم الواسعة في مختلف المجالات العلمية.
       `,
     images: [
-      { src: imgPlaceholder, alt: "Sample Image 1" },
-      { src: imgPlaceholder, alt: "Sample Image 2" },
-      { src: imgPlaceholder, alt: "Sample Image 3" },
-      { src: imgPlaceholder, alt: "Sample Image 4" },
-      { src: imgPlaceholder, alt: "Sample Image 5" },
+      { src: imgmsci1, alt: "Sample Image 1" },
+      { src: imgmsci2, alt: "Sample Image 2" },
+
     ],
   },
   {
@@ -113,10 +130,10 @@ const sections = [
 كانت فعالية "Hour of Code" تهدف إلى تعزيز فهم الطلاب لمفاهيم البرمجة وتطبيق التفكير اللوجستي من خلال ألعاب تفاعلية. تفاعل الطلاب بشكل فعّال مع الأنشطة وأظهروا إبداعًا وابتكارًا في تصميم الألعاب وتطبيق المفاهيم التي تعلموها. استجابة الطلاب كانت نشطة ومليئة بالحماس، مما جعلنا نشعر بالرضا عن جهودنا والنجاح الذي حققناه في إثارة فضولهم نحو عالم البرمجة وتطبيقات الـ Algorithm.
       `,
     images: [
-      { src: imgPlaceholder, alt: "Sample Image 1" },
-      { src: imgPlaceholder, alt: "Sample Image 2" },
-      { src: imgPlaceholder, alt: "Sample Image 3" },
-      { src: imgPlaceholder, alt: "Sample Image 4" },
+      { src: imgm1, alt: "Sample Image 1" },
+      { src: imgm2, alt: "Sample Image 2" },
+      { src: imgm3, alt: "Sample Image 3" },
+      { src: imgm4, alt: "Sample Image 4" },
     ],
   },
   {
@@ -136,10 +153,10 @@ const sections = [
 اختتمنا الفعالية بشكر الطلاب على مشاركتهم وتفاعلهم، وأكدنا على أهمية هذا اليوم وضرورة الاحتفال به كل عام لتذكيرنا بمعجزات نبينا محمد صلى الله عليه وسلم. كانت الفعالية ناجحة جدًا وأضفت جوًا من المعرفة والإيمان بين الطلاب.
       `,
     images: [
-      { src: imgPlaceholder, alt: "Sample Image 1" },
-      { src: imgPlaceholder, alt: "Sample Image 2" },
-      { src: imgPlaceholder, alt: "Sample Image 3" },
-      { src: imgPlaceholder, alt: "Sample Image 4" },
+      { src: imgmisraa1, alt: "Sample Image 1" },
+      { src: imgmisraa2, alt: "Sample Image 2" },
+      { src: imgmisraa3, alt: "Sample Image 3" },
+      { src: imgmisraa4, alt: "Sample Image 4" },
     ],
   },
   {
@@ -156,12 +173,7 @@ const sections = [
 
 اختتمت الفعالية بكلمات شكر وتقدير من قادة الكشافة والمعلمين، الذين أثنوا على جهود الجميع في إنجاح هذا اليوم. كانت مسيرة الكشاف في أم الفحم يومًا مليئًا بالأنشطة الممتعة والتجارب القيمة التي عززت روح الانتماء والمشاركة بين الطلاب والمجتمع
       `,
-    images: [
-      { src: imgPlaceholder, alt: "Sample Image 1" },
-      { src: imgPlaceholder, alt: "Sample Image 2" },
-      { src: imgPlaceholder, alt: "Sample Image 3" },
-      { src: imgPlaceholder, alt: "Sample Image 4" },
-    ],
+   
   },
 ];
 

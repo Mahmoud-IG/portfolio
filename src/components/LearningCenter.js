@@ -3,6 +3,50 @@ import Section from "./Section";
 import { FaUniversity } from "react-icons/fa";
 import imgPlaceholder from "../../imgs/img-ph-150.png";
 import { FaLock } from "react-icons/fa";
+import imgmarkezTaalom1 from "../../imgs/markez-taalom/img1.jpg";
+import imgmarkezTaalom2 from "../../imgs/markez-taalom/img2.jpg";
+import imgmarkezTaalom3 from "../../imgs/markez-taalom/img3.jpg";
+import imgmarkezTaalom4 from "../../imgs/markez-taalom/img4.jpg";
+import imgmarkezTaalom5 from "../../imgs/markez-taalom/img44.jpg";
+import imgmarkezTaalom6 from "../../imgs/markez-taalom/img43.jpg";
+import imgmarkezTaalom7 from "../../imgs/markez-taalom/img42.jpg";
+import imgmarkezTaalom8 from "../../imgs/markez-taalom/img41.jpg";
+import imgmarkezTaalom9 from "../../imgs/markez-taalom/img40.jpg";
+import imgmarkezTaalom10 from "../../imgs/markez-taalom/img39.jpg";
+import imgmarkezTaalom11 from "../../imgs/markez-taalom/img38.jpg";
+import imgmarkezTaalom12 from "../../imgs/markez-taalom/img37.jpg";
+import imgmarkezTaalom13 from "../../imgs/markez-taalom/img36.jpg";
+import imgmarkezTaalom14 from "../../imgs/markez-taalom/img35.jpg";
+import imgmarkezTaalom15 from "../../imgs/markez-taalom/img34.jpg";
+import imgmarkezTaalom16 from "../../imgs/markez-taalom/img33.jpg";
+import imgmarkezTaalom17 from "../../imgs/markez-taalom/img32.jpg";
+import imgmarkezTaalom18 from "../../imgs/markez-taalom/img31.jpg";
+import imgmarkezTaalom19 from "../../imgs/markez-taalom/img30.jpg";
+import imgmarkezTaalom20 from "../../imgs/markez-taalom/img5.jpg";
+import imgmarkezTaalom21 from "../../imgs/markez-taalom/img6.jpg";
+import imgmarkezTaalom22 from "../../imgs/markez-taalom/img7.jpg";
+import imgmarkezTaalom23 from "../../imgs/markez-taalom/img8.jpg";
+import imgmarkezTaalom24 from "../../imgs/markez-taalom/img9.jpg";
+import imgmarkezTaalom25 from "../../imgs/markez-taalom/img10.jpg";
+import imgmarkezTaalom26 from "../../imgs/markez-taalom/img11.jpg";
+import imgmarkezTaalom27 from "../../imgs/markez-taalom/img23.jpg";
+import imgmarkezTaalom28 from "../../imgs/markez-taalom/img24.jpg";
+import imgmarkezTaalom29 from "../../imgs/markez-taalom/img14.jpg";
+import imgmarkezTaalom30 from "../../imgs/markez-taalom/img15.jpg";
+import imgmarkezTaalom31 from "../../imgs/markez-taalom/img16.jpg";
+import imgmarkezTaalom32 from "../../imgs/markez-taalom/img17.jpg";
+import imgmarkezTaalom33 from "../../imgs/markez-taalom/img18.jpg";
+import imgmarkezTaalom34 from "../../imgs/markez-taalom/img19.jpg";
+import imgmarkezTaalom35 from "../../imgs/markez-taalom/img20.jpg";
+import imgmarkezTaalom36 from "../../imgs/markez-taalom/img21.jpg";
+import imgmarkezTaalom37 from "../../imgs/markez-taalom/img22.jpg";
+import imgmarkezTaalom38 from "../../imgs/markez-taalom/img25.jpg";
+import imgmarkezTaalom39 from "../../imgs/markez-taalom/img26.jpg";
+import imgmarkezTaalom40 from "../../imgs/markez-taalom/img27.jpg";
+import imgmarkezTaalom41 from "../../imgs/markez-taalom/img28.jpg";
+import imgmarkezTaalom42 from "../../imgs/markez-taalom/img29.jpg";
+
+
 
 const sections = [
   {
@@ -44,22 +88,58 @@ const sections = [
 كان هذا اليوم مليئًا بالأنشطة التفاعلية التي قدمت للطلاب فرصة لتجربة واكتشاف مفاهيم علم الحاسوب بطريقة ممتعة وعملية. شعرت بالفخر لنجاح الفعالية ورؤية الطلاب يتفاعلون ويتعلمون بحماس.
       `,
     images: [
-      { src: imgPlaceholder, alt: "Sample Image 1" },
-      { src: imgPlaceholder, alt: "Sample Image 2" },
-      { src: imgPlaceholder, alt: "Sample Image 3" },
-      { src: imgPlaceholder, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom1, alt: "Sample Image 1" },
+      { src: imgmarkezTaalom2, alt: "Sample Image 2" },
+      { src: imgmarkezTaalom3, alt: "Sample Image 3" },
+      { src: imgmarkezTaalom4, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom5, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom6, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom7, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom8, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom9, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom10, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom11, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom12, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom13, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom14, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom16, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom17, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom18, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom19, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom20, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom21, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom22, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom23, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom24, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom25, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom26, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom27, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom28, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom29, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom30, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom31, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom32, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom33, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom34, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom35, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom36, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom37, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom38, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom39, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom40, alt: "Sample Image 4" },
+      { src: imgmarkezTaalom41, alt: "Sample Image 4" },
     ],
     links: [
       {
-        href: "https://docs.google.com/document/d/1P5nCClAKUr-8V4Wdr7c8id5R35FRW5DPTOAoNFGOp4k/edit",
+        href: "https://docs.google.com/document/d/1HfgZq0mvZ2m21Cxh_qF-IxUKMtGF8M5T1JxaN4yWtKM/edit",
         title: 'مستند: "مخطط الدرس"',
       },
       {
-        href: "https://docs.google.com/document/d/1y5eIFXezmS3b_3OP5WK_xflyuM6V1B0L3q2bGUxmuSc/edit",
+        href: "https://docs.google.com/document/d/1NtKyQqJog4PcWZBJtbjl5B6MCqoXce0pKkPXlxlJb0U/edit",
         title: 'مستند: "مجرى الدرس"',
       },
       {
-        href: "https://docs.google.com/document/d/1y5eIFXezmS3b_3OP5WK_xflyuM6V1B0L3q2bGUxmuSc/edit",
+        href: "https://docs.google.com/presentation/d/11UBFkhlTkLdaDYFupDr1Mq5o1L2vbTjjiPICJbyNnVs/edit#slide=id.p",
         title: 'مستند: "معروضة الدرس"',
       },
     ],

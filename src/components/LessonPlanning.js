@@ -2,6 +2,26 @@ import React from "react";
 import Section from "./Section";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import imgPlaceholder from "../../imgs/img-ph-150.png";
+import imgAlgorithm1 from "../../imgs/algorithm1_2/img22.jpg";
+import imgAlgorithm2 from "../../imgs/algorithm1_2/img7.jpg";
+import imgAlgorithm3 from "../../imgs/algorithm1_2/img8.jpg";
+import imgAlgorithm4 from "../../imgs/algorithm1_2/img2.jpg";
+import imgAlgorithm5 from "../../imgs/algorithm1_2/img1.jpg";
+import imgAlgorithm6 from "../../imgs/algorithm1_2/img15.jpg";
+import imgAlgorithm7 from "../../imgs/algorithm1_2/img6.jpg";
+import imgAlgorithm8 from "../../imgs/algorithm1_2/img16.jpg";
+import imgAlgorithm9 from "../../imgs/algorithm1_2/img21.jpg";
+import imgAlgorithm10 from "../../imgs/algorithm1_2/img20.jpg";
+import imgAlgorithm11 from "../../imgs/algorithm1_2/img19.jpg";
+import imgAlgorithm12 from "../../imgs/algorithm1_2/img18.jpg";
+import imgHourOfCode1 from "../../imgs/hour_of_code_4_5/img1.jpg";
+import imgHourOfCode2 from "../../imgs/hour_of_code_4_5/img2.jpg";
+import imgHourOfCode3 from "../../imgs/hour_of_code_4_5/img4.jpg";
+import imgHourOfCode4 from "../../imgs/hour_of_code_4_5/img6.jpg";
+import imgHourOfCode5 from "../../imgs/hour_of_code_4_5/img10.jpg";
+import imgHourOfCode6 from "../../imgs/hour_of_code_4_5/img8.jpg";
+import imgHourOfCode7 from "../../imgs/hour_of_code_4_5/img14.jpg";
+import imgHourOfCode8 from "../../imgs/hour_of_code_4_5/img13.jpg";
 
 // Example text for each section
 const sections = [
@@ -33,10 +53,10 @@ const sections = [
       },
     ],
     images: [
-      { src: imgPlaceholder, alt: "Sample Image 1" },
-      { src: imgPlaceholder, alt: "Sample Image 2" },
-      { src: imgPlaceholder, alt: "Sample Image 3" },
-      { src: imgPlaceholder, alt: "Sample Image 4" },
+      { src: imgAlgorithm5, alt: "Sample Image 1" },
+      { src: imgAlgorithm6, alt: "Sample Image 2" },
+      { src: imgAlgorithm7, alt: "Sample Image 3" },
+      { src: imgAlgorithm8, alt: "Sample Image 4" },
     ],
   },
   {
@@ -71,10 +91,10 @@ const sections = [
       },
     ],
     images: [
-      { src: imgPlaceholder, alt: "Sample Image 1" },
-      { src: imgPlaceholder, alt: "Sample Image 2" },
-      { src: imgPlaceholder, alt: "Sample Image 3" },
-      { src: imgPlaceholder, alt: "Sample Image 4" },
+      { src: imgAlgorithm1, alt: "Sample Image 1" },
+      { src: imgAlgorithm2, alt: "Sample Image 2" },
+      { src: imgAlgorithm3, alt: "Sample Image 3" },
+      { src: imgAlgorithm4, alt: "Sample Image 4" },
     ],
   },
   {
@@ -108,10 +128,10 @@ const sections = [
       },
     ],
     images: [
-      { src: imgPlaceholder, alt: "Sample Image 1" },
-      { src: imgPlaceholder, alt: "Sample Image 2" },
-      { src: imgPlaceholder, alt: "Sample Image 3" },
-      { src: imgPlaceholder, alt: "Sample Image 4" },
+      { src: imgAlgorithm9, alt: "Sample Image 1" },
+      { src: imgAlgorithm10, alt: "Sample Image 2" },
+      { src: imgAlgorithm11, alt: "Sample Image 3" },
+      { src: imgAlgorithm12, alt: "Sample Image 4" },
     ],
   },
   {
@@ -149,10 +169,10 @@ const sections = [
       },
     ],
     images: [
-      { src: imgPlaceholder, alt: "Sample Image 1" },
-      { src: imgPlaceholder, alt: "Sample Image 2" },
-      { src: imgPlaceholder, alt: "Sample Image 3" },
-      { src: imgPlaceholder, alt: "Sample Image 4" },
+      { src: imgHourOfCode1, alt: "Sample Image 1" },
+      { src: imgHourOfCode2, alt: "Sample Image 2" },
+      { src: imgHourOfCode3, alt: "Sample Image 3" },
+      { src: imgHourOfCode4, alt: "Sample Image 4" },
     ],
   },
   {
@@ -190,10 +210,10 @@ const sections = [
       },
     ],
     images: [
-      { src: imgPlaceholder, alt: "Sample Image 1" },
-      { src: imgPlaceholder, alt: "Sample Image 2" },
-      { src: imgPlaceholder, alt: "Sample Image 3" },
-      { src: imgPlaceholder, alt: "Sample Image 4" },
+      { src: imgHourOfCode5, alt: "Sample Image 1" },
+      { src: imgHourOfCode6, alt: "Sample Image 2" },
+      { src: imgHourOfCode7, alt: "Sample Image 3" },
+      { src: imgHourOfCode8, alt: "Sample Image 4" },
     ],
   },
   {
@@ -230,12 +250,7 @@ const sections = [
         title: 'مستند: "معروضة الدرس"',
       },
     ],
-    images: [
-      { src: imgPlaceholder, alt: "Sample Image 1" },
-      { src: imgPlaceholder, alt: "Sample Image 2" },
-      { src: imgPlaceholder, alt: "Sample Image 3" },
-      { src: imgPlaceholder, alt: "Sample Image 4" },
-    ],
+   
   },
   {
     id: "id7",
@@ -269,12 +284,7 @@ const sections = [
         title: 'مستند: "معروضة الدرس"',
       },
     ],
-    images: [
-      { src: imgPlaceholder, alt: "Sample Image 1" },
-      { src: imgPlaceholder, alt: "Sample Image 2" },
-      { src: imgPlaceholder, alt: "Sample Image 3" },
-      { src: imgPlaceholder, alt: "Sample Image 4" },
-    ],
+   
   },
   {
     id: "id8",
@@ -304,12 +314,7 @@ const sections = [
         title: 'مستند: "معروضة الدرس"',
       },
     ],
-    images: [
-      { src: imgPlaceholder, alt: "Sample Image 1" },
-      { src: imgPlaceholder, alt: "Sample Image 2" },
-      { src: imgPlaceholder, alt: "Sample Image 3" },
-      { src: imgPlaceholder, alt: "Sample Image 4" },
-    ],
+    
   },
 ];
 
