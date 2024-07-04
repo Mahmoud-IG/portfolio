@@ -5,6 +5,34 @@ import Section from "./Section";
 import { FaBook, FaRegBuilding, FaUser, FaUsers } from "react-icons/fa";
 import ScrollArrow from "./ScrollArrow";
 import myImg from "../../imgs/me/img16.jpg";
+import myImg2 from "../../imgs/me/img6.jpg";
+import myImg4 from "../../imgs/me/img8.jpg";
+import myImg5 from "../../imgs/me/img9.jpg";
+import myImg6 from "../../imgs/me/img10.jpg";
+import myImg7 from "../../imgs/me/img11.jpg";
+import myImg8 from "../../imgs/me/img12.jpg";
+import myImg9 from "../../imgs/me/img15.jpg";
+import myImg10 from "../../imgs/me/img17.jpg";
+import myImgqsm1 from "../../imgs/qsm/img1.jpg";
+import myImgqsm2 from "../../imgs/qsm/img3.jpg";
+import myImgqsm3 from "../../imgs/qsm/img5.jpg";
+import myImg2me1 from "../../imgs/me2/Image7.jpg";
+import myImg2me2 from "../../imgs/me2/Image6.jpg";
+import myImg2me3 from "../../imgs/me2/Image5.jpg";
+import myImg2me4 from "../../imgs/me2/Image4.jpg";
+import myImg2me5 from "../../imgs/me2/Image3.jpg";
+import myImg2me6 from "../../imgs/me2/Image1.jpg";
+import myImg2me7 from "../../imgs/me2/Image2.jpg";
+import myImg2me8 from "../../imgs/me2/Image10.jpg";
+import myImg2me9 from "../../imgs/me2/Image9.jpg"; 
+import myImgtaalom1 from "../../imgs/markez-taalom/img14.jpg";
+import myImgtatbeqat1 from "../../imgs/tatbeqat/img1.jpg";
+import myImgtatbeqat2 from "../../imgs/tatbeqat/img2.jpg";
+import myImgtatbeqat3 from "../../imgs/tatbeqat/img4.jpg";
+import myImgodt1 from "../../imgs/ODT/img4.jpg";
+import myImgodt2 from "../../imgs/ODT/img7.jpg";
+import myImgodt3 from "../../imgs/ODT/img9.jpg";
+
 import { FaChalkboardTeacher } from "react-icons/fa";
 import imgPlaceholder from "../../imgs/img-ph-150.png";
 import { FaChartLine } from "react-icons/fa";
@@ -26,10 +54,10 @@ const sections = [
       اسمي محمود إبراهيم اغبارية، أبلغ من العمر 26 عامًا وأعيش في قرية مشيرفة التي تطل على مرج ابن عامر. أدرس في كلية القاسمي في باقة الغربية، حيث دخلت تخصصي علوم الحاسوب والتربية غير المنهجية، للسنة الدراسية 2024/2023. أؤمن بأن الحياة مليئة بالفرص والتحديات، وكل تحدٍ هو فرصة للتعلم والتطور.
     `,
     images: [
-      { src: imgPlaceholder, alt: "Sample Image 1" },
-      { src: imgPlaceholder, alt: "Sample Image 2" },
-      { src: imgPlaceholder, alt: "Sample Image 3" },
-      { src: imgPlaceholder, alt: "Sample Image 4" },
+      { src: myImg2, alt: "myImg2" },
+      { src: myImg2me7, alt: "Sample Image 2" },
+      { src: myImg2me8, alt: "Sample Image 3" },
+      { src: myImg2me9, alt: "Sample Image 4" },
     ],
   },
   {
@@ -39,9 +67,13 @@ const sections = [
     text: `
       أثناء دراستي في الكلية، كنت منخرطًا في العديد من الأنشطة الأكاديمية والاجتماعية، مما ساعدني على تطوير مهاراتي القيادية والتنظيمية.
 وخلال هذه المدة، تعلمت لغات البرمجة مثل "C#", "Java", "HTML" و "C++"، وتعمقت في مجال الحماية وأنظمة التشغيل، متعلمًا لغات مثل "Linux" و "DOS".
-بفضل التزامي واجتهادي، تمكنت من تحقيق إنجازات متميزة عادةً ما تتطلب أربع إلى خمس سنوات، خلال فترة زمنية لا تتجاوز السنتين فقط.
- 
-    `,
+بفضل التزامي واجتهادي، تمكنت من تحقيق إنجازات متميزة عادةً ما تتطلب أربع إلى خمس سنوات، خلال فترة زمنية لا تتجاوز السنتين فقط. `,
+images: [
+  { src: myImgqsm1, alt: "myImg2" },
+  { src: myImgqsm2, alt: "Sample Image 2" },
+  { src: myImgqsm3, alt: "Sample Image 3" },
+  { src: myImg2me5, alt: "Sample Image 4" },
+],
   },
   {
     id: "id3",
@@ -49,9 +81,13 @@ const sections = [
     title: "الخبرة",
     text: `
        بعد إتمام دراستي الثانوية، بدأت تعلم مهنة سائق إسعاف في "نجمة داود الحمراء"، وكانت هذه خطوتي الأولى لتحقيق هدفي في أحد المجالات العديدة التي اطمح اليها.
-خلال عملي في هذا المجال، تعلمت أهمية الحياة البشرية وعزز من قيمتي الإنسانية والرضاء في القدر *خيره وشره*, شخصيتي مبنية على التعلم المستمر لشتى المجالات ومختلفها.  وها انا من موقفي هذا أتطلع الى مراحل قادمة اصبو من خلالها تعلم مجالات اخرى ومواضيع مختلفة جديدة.
-
-    `,
+خلال عملي في هذا المجال، تعلمت أهمية الحياة البشرية وعزز من قيمتي الإنسانية والرضاء في القدر *خيره وشره*, شخصيتي مبنية على التعلم المستمر لشتى المجالات ومختلفها.  وها انا من موقفي هذا أتطلع الى مراحل قادمة اصبو من خلالها تعلم مجالات اخرى ومواضيع مختلفة جديدة.`,
+images: [
+  { src: myImg2me1, alt: "myImg2" },
+  { src: myImg2me2, alt: "Sample Image 2" },
+  { src: myImg2me3, alt: "Sample Image 3" },
+  { src: myImg2me4, alt: "Sample Image 4" },
+],
   },
   {
     id: "id4",
@@ -63,6 +99,12 @@ const sections = [
 السفر هو شغفي الآخر، حيث يفتح لي أبوابًا لفهم أعمق للعالم من حولي عبر اكتشاف ثقافات جديدة والتفاعل مع مجتمعات متنوعة، مما يعزز قدرتي على التفكير النقدي والتواصل الفعّال.
  القراءة توسع مداركي وتثري معرفتي، سواء في مجالات تخصصي أو مجالات جديدة تضيف إلى شخصيتي وتطويري المهني.
 أؤمن بأن تنظيم الوقت هو مفتاح النجاح في الحياة، حيث أتمكن من الموازنة بين الدراسة والتطبيق العملي والهوايات، مما يتيح لي تحقيق أهدافي بكفاءة ويساهم في نجاحي الأكاديمي والمهني.    `,
+images: [
+  { src: myImg2me6, alt: "myImg2" },
+  { src: myImgodt1, alt: "Sample Image 2" },
+  { src: myImgodt2, alt: "Sample Image 3" },
+  { src: myImgodt3, alt: "Sample Image 4" },
+],
   },
   {
     id: "id5",
@@ -72,8 +114,13 @@ const sections = [
 اخترت مهنة التعليم لأنها أساس المهن. سأروي قصة توضح هذا المفهوم: كان هناك ملك يحب المباني الكبيرة ولكن يكره رؤية الأعمدة في وسطها. جاء مهندس من بلاد بعيدة ووعد ببناء مبنى بدون أعمدة. وعند الانتهاء، دهش الملك وسأل المهندس عن السر. أخبره المهندس أن هناك حجر أساس مخفي في زاوية المبنى يقوم بدور الأعمدة. وهذا هو دور المعلم الذي أطمح إليه، أن أكون حجر الأساس الذي يرفع المهن الأخرى بدون أن يكون مرئيًا أو موقعًا للمديح.
 
 ومن ناحية أخرى، يأتي دور المهندس الذي يمثل دور المرشد وفي قصتي نلقي الضوء على (مرشدتي فاطمة) التي ثابرت وأدت دورها لتكون هي المهندس العبقري الذي أثمر وأعد حجر الأساس, فيمكنني الحديث بدون كلل عن تفانيها وحسن نواياها ولا يمكن نكران كونها جزء في اعداد وهندسة احد معلمي المستقبل ان شاء الله. 
-والعمل بجد لتحقيق أهدافي وأهداف الفريق الذي أعمل معه. أنا على ثقة بأن مهاراتي وخبراتي ستضيف قيمة حقيقية إلى أي مكان أكون فيه, وإنني ملتزم بتقديم أفضل ما لدي في كل موقف.
-    `,
+والعمل بجد لتحقيق أهدافي وأهداف الفريق الذي أعمل معه. أنا على ثقة بأن مهاراتي وخبراتي ستضيف قيمة حقيقية إلى أي مكان أكون فيه, وإنني ملتزم بتقديم أفضل ما لدي في كل موقف.`,
+images: [
+  { src: myImgtaalom1, alt: "myImg2" },
+  { src: myImgtatbeqat1, alt: "Sample Image 2" },
+  { src: myImgtatbeqat2, alt: "Sample Image 3" },
+  { src: myImgtatbeqat3, alt: "Sample Image 4" },
+],
   },
   {
     id: "id5",
@@ -152,8 +199,8 @@ const About = () => {
   return (
     <div>
       <LayoutWithImage
-        photoUrls={[myImg]}
-        text={sections[0].text}
+        photoUrls={[myImg8, myImg5, myImg4, myImg6, myImg7, myImg9, myImg10, myImg]}
+        text= "مرحباً بكم في بورتفوليو التطبيقات العملية الخاص بي! هنا، ستتعرفون على رحلتي التعليمية وتطوري المهني كطالب أكاديمي, حيث أسعى لإحداث تأثير إيجابي في عالم علم الحاسوب, ومن خلال تجاربي في مدرسة الثانوية الشاملة في أم الفحم. ستجدون هنا مزيجًا رائعًا من الابتكار والتميز، مصحوبًا بمحتويات مثيرة وتفاعلية تعكس شغفي بالتعليم وتطوري المستمر. شكراً لزيارتكم، وأتمنى أن تجدوا في هذا الموقع متعة وفائدة تلهمكم لاستكشاف المزيد!"
         signature={<Signature />}
       />
       <ScrollArrow targetId="whoami-section" />
